@@ -27,6 +27,7 @@ td {
 .first-row {
   background-color: #078f8f;
   color: #f4efec;
+  transition: all 0.5s ease-in-out;
 }
 .first-row:hover {
   background-color: #f5f507;
@@ -36,6 +37,7 @@ td {
 .second-row {
   background-color: #f5f507;
   color: #171c29;
+  transition: all 0.5s ease-in-out;
 }
 .second-row:hover {
   background-color: #078f8f;
@@ -141,4 +143,4 @@ caption {
 .arrow.arrow--short {
   z-index: 9999;
   height: 300px;
-}
+}/*# sourceMappingURL=main.css.map */
