@@ -1,0 +1,184 @@
+/* Typography */
+$primary-color: #078f8f;
+$secondary-color: #f5f507;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #171c29;
+  } @else {
+    @return #f4efec;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body h1 {
+  margin-left: 120px;
+  font-size: 15rem;
+}
+
+/* Table */
+table,
+td {
+  border: 10px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  font-size: 8rem;
+  margin-left: 90px;
+}
+
+td {
+  height: 15rem;
+  width: 60rem;
+}
+
+.first-row {
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+
+  &:hover {
+    background-color: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.second-row {
+  background-color: $secondary-color;
+  color: set-text-color($secondary-color);
+
+  &:hover {
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+  }
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* Clocks */
+
+.clocks {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Clock 1 */
+
+.clock-base {
+  background-color: #ededed;
+  border: 7px solid #000;
+  border-radius: 100px;
+  width: 800px;
+  height: 800px;
+  margin-left: 90px;
+
+  &--position {
+    position: relative;
+
+    .twelve {
+      position: absolute;
+      left: 370px;
+      top: 80px;
+    }
+
+    .three {
+      position: absolute;
+      right: 80px;
+      top: 370px;
+    }
+
+    .six {
+      position: absolute;
+      left: 370px;
+      bottom: 80px;
+    }
+
+    .nine {
+      position: absolute;
+      left: 80px;
+      top: 370px;
+    }
+
+    .arrow--long {
+      position: absolute;
+      top: 120px;
+      left: 395px;
+    }
+
+    .arrow--short {
+      position: absolute;
+      top: 260px;
+      left: 460px;
+      rotate: 90deg;
+    }
+  }
+
+  &--transform {
+    .twelve {
+      transform: translate(370px, -610px);
+    }
+
+    .three {
+      transform: translate(650px, -380px);
+    }
+
+    .six {
+      transform: translate(370px, -170px);
+    }
+
+    .nine {
+      transform: translate(90px, -520px);
+    }
+
+    .arrow--long {
+      position: relative;
+      transform: translate(397px, 115px);
+    }
+
+    .arrow--short {
+      position: relative;
+      transform: translate(460px, -120px) rotate(90deg);
+    }
+  }
+
+  @include transition-ease;
+
+  &:hover {
+    transform: scale(110%);
+  }
+}
+
+.time__points {
+  background-color: red;
+  border: 7px solid #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.arrow {
+  background-color: #000;
+  width: 20px;
+
+  &.arrow--long {
+    z-index: 9999;
+    height: 380px;
+  }
+
+  &.arrow--short {
+    z-index: 9999;
+    height: 300px;
+  }
+}
+
+/* Clock 2 */
