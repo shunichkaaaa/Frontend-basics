@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+.link-button {
+  margin: 50px;
+}
+
+.layout {
+  max-width: 950px;
+  margin: auto;
+}
+
+header {
+  background-color: #70a7df;
+  padding: 20px;
+}
+
+aside {
+  background-color: #93b070;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.footer__photo {
+  background-color: #fabff5;
+  width: 100%;
+}
+
+/* Float */
+.main-content--float .main-content__photo {
+  float: left;
+  width: 70%;
+  margin-right: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Flex */
+.main-content--flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content--flex .main-content__photo {
+  width: 70%;
+}
+
+.main-content--flex aside {
+  padding-left: 20px;
+}
