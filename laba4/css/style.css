@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  padding: 40px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.birth h3,
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+.photo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.imagesToBeScaled {
+  width: 100%;
+  max-width: 100%;
+  max-height: 362.6px;
+}
+
+.place-to-visit__item {
+  padding-bottom: 5px;
+}
+
+.colored {
+  background: #d0a2f7;
+  color: #fff;
+}
+
+.colored--another {
+  background: #fae7c9;
+  color: #000;
+}
