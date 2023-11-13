@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="BIO, laboratary work" />
+    <meta name="description" content="Події. Регулярні вирази" />
+    <title>Григор'єва ДС, ІО-12, лаба №5, 7</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h2>Form to fill in</h2>
+        <p class="lead">Questions? Do not hesitate to contact your teacher.</p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form name="studentForm" onsubmit="return Formdata(this)" class="container mt-4">
+            <!-- Form group for "Full Name (Last F. M.)" -->
+            <div class="mb-3">
+              <label for="fnm" class="form-label">1. Full Name:</label>
+              <input
+                type="text"
+                name="fnm"
+                id="fnm"
+                class="form-control"
+                placeholder="e.g. Boyko K. V."
+              />
+              <small class="text-danger" id="fnm-validation"></small>
+            </div>
+            <!-- Form group for "Variant" -->
+            <div class="mb-3">
+              <label for="variant" class="form-label">2. Variant:</label>
+              <select name="variant" id="variant" class="form-select">
+                <option selected>Select your variant...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <small class="text-danger" id="variant-validation"></small>
+            </div>
+            <!-- Form group for "Контактний телефон ((XXX)-XXX-XX-XX)" -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">3. Phone Number:</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="form-control"
+                placeholder="(XXX)-XXX-XX-XX"
+              />
+              <small class="text-danger" id="phone-validation"></small>
+            </div>
+            <!-- Form group for "Faculty ("FacultyName")" -->
+            <div class="mb-3" class="form-label">
+              <label for="faculty" class="form-label">4. Faculty:</label>
+              <input
+                type="text"
+                name="faculty"
+                id="faculty"
+                class="form-control"
+                placeholder="Faculty"
+              />
+              <small class="text-danger" id="faculty-validation"></small>
+            </div>
+            <!-- Form group for "Address (c. "CityName")" -->
+            <div class="mb-3">
+              <label for="address" class="form-label">5. Address:</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="form-control"
+                placeholder="City"
+              />
+              <small class="text-danger" id="address-validation"></small>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="output text-center">
+        <div class="row">
+          <h3>1. Full Name:</h3>
+          <p class="fnm-output"></p>
+        </div>
+        <div class="row">
+          <h3>2. Variant:</h3>
+          <p class="variant-output"></p>
+        </div>
+        <div class="row">
+          <h3>3. Phone Number:</h3>
+          <p class="phone-output"></p>
+        </div>
+        <div class="row">
+          <h3>4. Faculty:</h3>
+          <p class="faculty-output"></p>
+        </div>
+        <div class="row">
+          <h3>5. Address:</h3>
+          <p class="address-output"></p>
+        </div>
+      </div>
+    </div>
+
+    <a href="table.html">
+      <button class="btn btn-success">GO TO TABLE</button>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script tag for the validation function -->
+    <script src="data.js"></script>
+  </body>
+</html>

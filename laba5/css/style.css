@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e5e5e5;
+  padding: 40px;
+}
+
+/* Registration form */
+
+.output {
+  display: none;
+}
+
+.output--visible {
+  display: block;
+}
+
+/* Colored table */
+table,
+td {
+  border: 5px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  font-size: 3rem;
+  margin-left: 90px;
+}
+
+td {
+  height: 5rem;
+  width: 5rem;
+}
+
+.colorPalette {
+  margin-left: 90px;
+  margin-bottom: 20px;
+  width: 30rem;
+}
