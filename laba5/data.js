@@ -14,10 +14,9 @@ function Formdata(data) {
       "The full name should consist from at least 3 symbols.";
     fnm.classList.add("is-invalid");
     fnm.classList.remove("is-valid");
-  } else if (!/^[a-zA-Z ]+$/.test(data.fnm.value)) {
+  } else if (!/^[a-zA-Z. ]+$/.test(data.fnm.value)) {
     check = false;
-    document.getElementById("fnm-validation").innerText =
-      "The fnm number contains invalid symbols.";
+    document.getElementById("fnm-validation").innerText = "The full name contains invalid symbols.";
     fnm.classList.add("is-invalid");
     fnm.classList.remove("is-valid");
   } else {
