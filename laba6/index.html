@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="BIO, laboratary work" />
+    <meta
+      name="description"
+      content="JavaScript. Формат JSON. API. Отримання даних із зовнішньої сторінки (fetch, promise)"
+    />
+    <title>Григор'єва ДС, ІО-12, лаба №6, 7</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <div class="container__buttons">
+      <button class="btn btn--secondary" onclick="fetchData()">Download</button>
+      <button class="btn btn--secondary" onclick="removeAllData()">Remove All Cards</button>
+      <button class="btn btn--secondary" onclick="removeLastData()">Remove Last Card</button>
+    </div>
+    <div class="container__cards"></div>
+    <script src="info.js"></script>
+  </body>
+</html>
