@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Frontend-basics/laba7/static/css/main.d45f3d93.css",
+    "main.js": "/Frontend-basics/laba7/static/js/main.a1be20d5.js",
+    "static/media/uzhgorod-castle-painted.jpg": "/Frontend-basics/laba7/static/media/uzhgorod-castle-painted.fda3f383c9a68d9822e8.jpg",
+    "static/media/uzhgorod-castle.jpg": "/Frontend-basics/laba7/static/media/uzhgorod-castle.212ebbd66a18a9aee697.jpg",
+    "index.html": "/Frontend-basics/laba7/index.html",
+    "main.d45f3d93.css.map": "/Frontend-basics/laba7/static/css/main.d45f3d93.css.map",
+    "main.a1be20d5.js.map": "/Frontend-basics/laba7/static/js/main.a1be20d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d45f3d93.css",
+    "static/js/main.a1be20d5.js"
+  ]
+}
