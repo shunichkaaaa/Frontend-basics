@@ -1,0 +1,44 @@
+.Item {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 8px 0 #e0e0e0;
+  text-align: center;
+  transition: box-shadow 0.15s ease-out;
+}
+
+.Item:hover {
+  box-shadow: 0 0 15px #6b5d3a;
+}
+
+.image {
+  width: 250px;
+}
+
+.image-container {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 16px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 20px auto;
+}
+
+.Item p {
+  font-size: 20px;
+}
